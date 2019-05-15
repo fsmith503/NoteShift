@@ -24,6 +24,10 @@ class WriteViewController: UIViewController {
         let result = formatter.string(from: date)
         dateLabel.text = result
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        textField.text = "Begin Journal Entry Here:)"
+    }
 
     @IBAction func saveButtonPressed(_ sender: Any) {
         if(self.textField.text == ""){
