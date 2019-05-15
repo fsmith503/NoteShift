@@ -14,6 +14,7 @@ class TabBarViewController: UITabBarController {
     //var CalendarVC: CalendarViewController?
     var CheckoutVC: CheckoutViewController?
     var WriteVC: WriteViewController?
+    var ProfileVC: ProfileViewController?
     var subviewControllers:[UIViewController] = []
 
     override func viewDidLoad() {
@@ -47,6 +48,13 @@ class TabBarViewController: UITabBarController {
         CheckoutVC?.tabBarItem.selectedImage = UIImage(named: "credit_card")?.withRenderingMode(.alwaysOriginal)
         CheckoutVC?.tabBarItem.image = UIImage(named: "credit_card")?.withRenderingMode(.alwaysOriginal)
         
+        ProfileVC = ProfileViewController()
+        ProfileVC?.title = NSLocalizedString("Profile", comment: "TabNameForMenu")
+        ProfileVC?.tabBarItem.title = NSLocalizedString("Profile", comment: "TabNameForMenu")
+        ProfileVC?.tabBarItem.selectedImage = UIImage(named: "profile_dark")?.withRenderingMode(.alwaysOriginal)
+        ProfileVC?.tabBarItem.image = UIImage(named: "profile_dark")?.withRenderingMode(.alwaysOriginal)
+        
+        
         
         
         let JournalNavigationController = JournalsVC
@@ -55,11 +63,14 @@ class TabBarViewController: UITabBarController {
         let CheckoutNavigationController = CheckoutVC
         //subviewControllers.append(CalendarNavigationController!)
         let WriteNavigationController = WriteVC
+        
+        let ProfileNavigationController = ProfileVC
         //subviewControllers.append(WriteNavigationController!)
         //self.viewControllers = subviewControllers
         subviewControllers.append(WriteNavigationController!)
         subviewControllers.append(JournalNavigationController!)
         subviewControllers.append(CheckoutNavigationController!)
+        subviewControllers.append(ProfileNavigationController!)
         //subviewControllers.append(CalendarNavigationController!)
         self.viewControllers = subviewControllers
         

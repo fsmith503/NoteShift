@@ -13,4 +13,10 @@ class DeisgnTableViewCell: UITableViewCell {
 
     @IBOutlet weak var designImage: UIImageView!
     @IBOutlet weak var checkmarkImage: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    
 }

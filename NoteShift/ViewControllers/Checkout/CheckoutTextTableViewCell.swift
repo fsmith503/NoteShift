@@ -13,4 +13,9 @@ class CheckoutTextTableViewCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
     
+    override func awakeFromNib() {
+        self.label.text = "Select A Design For Your Journal"
+        super.awakeFromNib()
+    }
+    
 }

@@ -19,12 +19,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="440" height="149.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plain-white-background" translatesAutoresizingMaskIntoConstraints="NO" id="ChC-ZH-wvZ">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainpicture" highlightedImage="design8" translatesAutoresizingMaskIntoConstraints="NO" id="ChC-ZH-wvZ">
                         <rect key="frame" x="-6" y="7" width="223" height="132"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lxr-YS-Rtq">
-                        <rect key="frame" x="384" y="34" width="36" height="33"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark_green" translatesAutoresizingMaskIntoConstraints="NO" id="Lxr-YS-Rtq">
+                        <rect key="frame" x="276" y="58" width="36" height="33"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                 </subviews>
@@ -38,6 +38,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="plain-white-background" width="1920" height="1280"/>
+        <image name="checkmark_green" width="87" height="87"/>
+        <image name="design8" width="3008" height="2000"/>
+        <image name="mainpicture" width="86" height="85"/>
     </resources>
 </document>

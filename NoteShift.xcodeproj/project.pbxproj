@@ -17,6 +17,8 @@
 		3703D464228B452E00125345 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3703D463228B452E00125345 /* TabBarViewController.xib */; };
 		3703D466228B454C00125345 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3703D465228B454C00125345 /* EntryViewController.swift */; };
 		3703D468228B455000125345 /* EntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3703D467228B455000125345 /* EntryViewController.xib */; };
+		373BE5E2228CA8F300B91F64 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373BE5E0228CA8F300B91F64 /* ProfileViewController.swift */; };
+		373BE5E3228CA8F300B91F64 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 373BE5E1228CA8F300B91F64 /* ProfileViewController.xib */; };
 		3794A2C6228B4769004A96C0 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2C5228B4769004A96C0 /* UIFontExtension.swift */; };
 		3794A2C8228B4776004A96C0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2C7228B4776004A96C0 /* UIColorExtension.swift */; };
 		3794A2CB228B486F004A96C0 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2CA228B486F004A96C0 /* ColorHelper.swift */; };
@@ -73,6 +75,8 @@
 		3703D463228B452E00125345 /* TabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
 		3703D465228B454C00125345 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		3703D467228B455000125345 /* EntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryViewController.xib; sourceTree = "<group>"; };
+		373BE5E0228CA8F300B91F64 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		373BE5E1228CA8F300B91F64 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		3794A2C5228B4769004A96C0 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		3794A2C7228B4776004A96C0 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		3794A2CA228B486F004A96C0 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
@@ -133,6 +137,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		373BE5DF228CA8CF00B91F64 /* Proflle */ = {
+			isa = PBXGroup;
+			children = (
+				373BE5E0228CA8F300B91F64 /* ProfileViewController.swift */,
+				373BE5E1228CA8F300B91F64 /* ProfileViewController.xib */,
+			);
+			path = Proflle;
+			sourceTree = "<group>";
+		};
 		3794A2C3228B4719004A96C0 /* UIColorExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				37C844EE228B160B00BA5345 /* Write */,
+				373BE5DF228CA8CF00B91F64 /* Proflle */,
 				37C844ED228B15F800BA5345 /* Journals */,
 				3794A2D5228B7F0D004A96C0 /* Checkout */,
 				37C844EC228B15F500BA5345 /* Calendar */,
@@ -409,6 +423,7 @@
 				37FB98DD228B3FD800636C1D /* Main.storyboard in Resources */,
 				3703D468228B455000125345 /* EntryViewController.xib in Resources */,
 				3794A2D9228B7F2C004A96C0 /* CheckoutViewController.xib in Resources */,
+				373BE5E3228CA8F300B91F64 /* ProfileViewController.xib in Resources */,
 				37C844B9228B10AD00BA5345 /* Assets.xcassets in Resources */,
 				3703D458228B450300125345 /* WriteViewController.xib in Resources */,
 				37FB98DB228B3FD800636C1D /* Assets.xcassets in Resources */,
@@ -440,6 +455,7 @@
 			files = (
 				37C844B4228B10AC00BA5345 /* ViewController.swift in Sources */,
 				3794A2E3228B8846004A96C0 /* DeisgnTableViewCell.swift in Sources */,
+				373BE5E2228CA8F300B91F64 /* ProfileViewController.swift in Sources */,
 				3794A2C6228B4769004A96C0 /* UIFontExtension.swift in Sources */,
 				3794A2E8228BA3D4004A96C0 /* ObjectHelpers.swift in Sources */,
 				37C844B2228B10AC00BA5345 /* AppDelegate.swift in Sources */,
