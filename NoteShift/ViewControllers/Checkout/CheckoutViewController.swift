@@ -50,7 +50,9 @@ extension CheckoutViewController: UITableViewDelegate, UITableViewDataSource, UI
             }
             cell?.selectionStyle = UITableViewCell.SelectionStyle.none
             return cell!
-
+// // // //
+            
+            
         }
         if indexPath[1] == 1 {
         cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
