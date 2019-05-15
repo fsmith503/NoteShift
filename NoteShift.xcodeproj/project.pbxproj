@@ -23,6 +23,12 @@
 		3794A2D0228B6B1D004A96C0 /* JournalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2CE228B6B1D004A96C0 /* JournalTableViewCell.swift */; };
 		3794A2D1228B6B1D004A96C0 /* JournalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3794A2CF228B6B1D004A96C0 /* JournalTableViewCell.xib */; };
 		3794A2D3228B7557004A96C0 /* JournalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2D2228B7557004A96C0 /* JournalClass.swift */; };
+		3794A2D8228B7F2C004A96C0 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2D6228B7F2C004A96C0 /* CheckoutViewController.swift */; };
+		3794A2D9228B7F2C004A96C0 /* CheckoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3794A2D7228B7F2C004A96C0 /* CheckoutViewController.xib */; };
+		3794A2DF228B8583004A96C0 /* CheckoutTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2DD228B8583004A96C0 /* CheckoutTextTableViewCell.swift */; };
+		3794A2E0228B8583004A96C0 /* CheckoutTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3794A2DE228B8583004A96C0 /* CheckoutTextTableViewCell.xib */; };
+		3794A2E3228B8846004A96C0 /* DeisgnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2E1228B8846004A96C0 /* DeisgnTableViewCell.swift */; };
+		3794A2E4228B8846004A96C0 /* DeisgnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3794A2E2228B8846004A96C0 /* DeisgnTableViewCell.xib */; };
 		37C844B2228B10AC00BA5345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C844B1228B10AC00BA5345 /* AppDelegate.swift */; };
 		37C844B4228B10AC00BA5345 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C844B3228B10AC00BA5345 /* ViewController.swift */; };
 		37C844B7228B10AC00BA5345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C844B5228B10AC00BA5345 /* Main.storyboard */; };
@@ -70,6 +76,12 @@
 		3794A2CE228B6B1D004A96C0 /* JournalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewCell.swift; sourceTree = "<group>"; };
 		3794A2CF228B6B1D004A96C0 /* JournalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JournalTableViewCell.xib; sourceTree = "<group>"; };
 		3794A2D2228B7557004A96C0 /* JournalClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalClass.swift; sourceTree = "<group>"; };
+		3794A2D6228B7F2C004A96C0 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		3794A2D7228B7F2C004A96C0 /* CheckoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutViewController.xib; sourceTree = "<group>"; };
+		3794A2DD228B8583004A96C0 /* CheckoutTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTextTableViewCell.swift; sourceTree = "<group>"; };
+		3794A2DE228B8583004A96C0 /* CheckoutTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutTextTableViewCell.xib; sourceTree = "<group>"; };
+		3794A2E1228B8846004A96C0 /* DeisgnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeisgnTableViewCell.swift; sourceTree = "<group>"; };
+		3794A2E2228B8846004A96C0 /* DeisgnTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeisgnTableViewCell.xib; sourceTree = "<group>"; };
 		37C844AE228B10AC00BA5345 /* NoteShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C844B1228B10AC00BA5345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37C844B3228B10AC00BA5345 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +142,19 @@
 				3794A2C5228B4769004A96C0 /* UIFontExtension.swift */,
 			);
 			path = UIFontExtension;
+			sourceTree = "<group>";
+		};
+		3794A2D5228B7F0D004A96C0 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				3794A2D6228B7F2C004A96C0 /* CheckoutViewController.swift */,
+				3794A2D7228B7F2C004A96C0 /* CheckoutViewController.xib */,
+				3794A2DD228B8583004A96C0 /* CheckoutTextTableViewCell.swift */,
+				3794A2DE228B8583004A96C0 /* CheckoutTextTableViewCell.xib */,
+				3794A2E1228B8846004A96C0 /* DeisgnTableViewCell.swift */,
+				3794A2E2228B8846004A96C0 /* DeisgnTableViewCell.xib */,
+			);
+			path = Checkout;
 			sourceTree = "<group>";
 		};
 		37C844A5228B10AC00BA5345 = {
@@ -193,6 +218,7 @@
 			children = (
 				37C844EE228B160B00BA5345 /* Write */,
 				37C844ED228B15F800BA5345 /* Journals */,
+				3794A2D5228B7F0D004A96C0 /* Checkout */,
 				37C844EC228B15F500BA5345 /* Calendar */,
 				37C844E5228B11EB00BA5345 /* TabBar */,
 				37C844E0228B116100BA5345 /* Entry */,
@@ -368,13 +394,16 @@
 				3703D45C228B451300125345 /* JournalsViewController.xib in Resources */,
 				37C844BC228B10AD00BA5345 /* LaunchScreen.storyboard in Resources */,
 				3794A2D1228B6B1D004A96C0 /* JournalTableViewCell.xib in Resources */,
+				3794A2E0228B8583004A96C0 /* CheckoutTextTableViewCell.xib in Resources */,
 				3703D460228B452300125345 /* CalendarViewController.xib in Resources */,
 				37FB98DC228B3FD800636C1D /* LaunchScreen.storyboard in Resources */,
 				37FB98DD228B3FD800636C1D /* Main.storyboard in Resources */,
 				3703D468228B455000125345 /* EntryViewController.xib in Resources */,
+				3794A2D9228B7F2C004A96C0 /* CheckoutViewController.xib in Resources */,
 				37C844B9228B10AD00BA5345 /* Assets.xcassets in Resources */,
 				3703D458228B450300125345 /* WriteViewController.xib in Resources */,
 				37FB98DB228B3FD800636C1D /* Assets.xcassets in Resources */,
+				3794A2E4228B8846004A96C0 /* DeisgnTableViewCell.xib in Resources */,
 				37C844B7228B10AC00BA5345 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,11 +430,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				37C844B4228B10AC00BA5345 /* ViewController.swift in Sources */,
+				3794A2E3228B8846004A96C0 /* DeisgnTableViewCell.swift in Sources */,
 				3794A2C6228B4769004A96C0 /* UIFontExtension.swift in Sources */,
 				37C844B2228B10AC00BA5345 /* AppDelegate.swift in Sources */,
 				3794A2D3228B7557004A96C0 /* JournalClass.swift in Sources */,
 				3703D45A228B450C00125345 /* JournalsViewController.swift in Sources */,
 				3703D466228B454C00125345 /* EntryViewController.swift in Sources */,
+				3794A2D8228B7F2C004A96C0 /* CheckoutViewController.swift in Sources */,
+				3794A2DF228B8583004A96C0 /* CheckoutTextTableViewCell.swift in Sources */,
 				3703D45E228B451D00125345 /* CalendarViewController.swift in Sources */,
 				37C844FC228B183900BA5345 /* NSNavigationController.swift in Sources */,
 				3794A2D0228B6B1D004A96C0 /* JournalTableViewCell.swift in Sources */,
