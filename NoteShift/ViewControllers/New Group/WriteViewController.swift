@@ -13,26 +13,16 @@ class WriteViewController: UIViewController {
     
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var saveButton: UIButton!
-    @IBOutlet var textField: UITextField!
+    @IBOutlet var textField: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.NoteshiftColors.AppBlue
-        
-        
         let date = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "MM.dd.yyyy HH:mm:ss"
-       //let dateFormatter : DateFormatter = DateFormatter()
-        //dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        //let date = Date()
-        //let dateString = dateFormatter.string(from: date)
-        
-        
         let result = formatter.string(from: date)
         dateLabel.text = result
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func saveButtonPressed(_ sender: Any) {

@@ -12,6 +12,7 @@ class EntryViewController: UIViewController {
     
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var signupButton: UIButton!
+    @IBOutlet var emailField: UITextField!
     @IBOutlet var passwordField: UITextField!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     //texfield.secureTextEntry = true
@@ -28,7 +29,7 @@ class EntryViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        //self.activityIndicator.isHidden = true
+        self.activityIndicator.isHidden = true
         //sleep(3)
 //        let vc = TabBarViewController(nibName: "TabBarViewController", bundle: nil)
 //        self.present(vc, animated: true, completion: nil)
@@ -39,26 +40,40 @@ class EntryViewController: UIViewController {
     
     @IBAction func buttonPressedSignup()
     {
-        self.activityIndicator.isHidden = false
-        self.activityIndicator.startAnimating()
-        //self.activityIndicator.stopAnimating()
-        sleep(3)
-        self.activityIndicator.stopAnimating()
-        self.activityIndicator.isHidden = true
-        
-        let vc = TabBarViewController(nibName: "TabBarViewController", bundle: nil)
-        self.present(vc, animated: true, completion: nil)
+        if emailField.text == "" || passwordField.text == "" {
+            let alert = UIAlertController(title: "Username and Password field must have a value.", message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+        let delay = max(0.0, 2.0)
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.isHidden = true
+            let vc = TabBarViewController(nibName: "TabBarViewController", bundle: nil)
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
     @IBAction func buttonPressedLogin()
     {
-        self.activityIndicator.isHidden = false
-        self.activityIndicator.startAnimating()
-        sleep(3)
-        self.activityIndicator.stopAnimating()
-        self.activityIndicator.isHidden = true
-        let vc = TabBarViewController(nibName: "TabBarViewController", bundle: nil)
-        self.present(vc, animated: true, completion: nil)
+        if emailField.text == "" || passwordField.text == "" {
+            let alert = UIAlertController(title: "Username and Password field must have a value.", message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+        let delay = max(0.0, 2.0)
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.isHidden = true
+            let vc = TabBarViewController(nibName: "TabBarViewController", bundle: nil)
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
 }

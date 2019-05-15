@@ -14,7 +14,7 @@
             <connections>
                 <outlet property="dateLabel" destination="gSM-BB-f8V" id="8JE-IY-FWx"/>
                 <outlet property="saveButton" destination="JJG-pX-3dA" id="Gp7-ml-2nd"/>
-                <outlet property="textField" destination="kjT-wB-afF" id="NrQ-GD-5VU"/>
+                <outlet property="textField" destination="gv5-vt-LyN" id="7eO-ze-JLH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,14 +33,6 @@
                         <action selector="saveButtonPressed:" destination="-1" eventType="touchUpInside" id="ySq-Pg-DLD"/>
                     </connections>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Begin Journal Entry Here:)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kjT-wB-afF">
-                    <rect key="frame" x="10" y="92" width="349" height="466"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSM-BB-f8V">
                     <rect key="frame" x="63" y="44" width="249" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -48,6 +40,13 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Begin Journal Entry Here:)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gv5-vt-LyN">
+                    <rect key="frame" x="16" y="96" width="349" height="458"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" red="0.82954106660000004" green="0.32666925429999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

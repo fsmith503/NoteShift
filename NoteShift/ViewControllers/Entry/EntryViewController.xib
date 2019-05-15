@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EntryViewController" customModule="NoteShift" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicator" destination="VW4-f0-mND" id="5DI-dG-oZc"/>
+                <outlet property="emailField" destination="Xmr-5Z-Nlo" id="Aqk-Ur-AaY"/>
                 <outlet property="loginButton" destination="4vD-73-lwo" id="gli-Ur-6U5"/>
                 <outlet property="passwordField" destination="UGQ-eg-dXO" id="eFs-ex-dct"/>
                 <outlet property="signupButton" destination="6eH-C3-7GF" id="PzN-Iv-Vhi"/>
@@ -41,7 +42,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" textContentType="email"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGQ-eg-dXO">
                     <rect key="frame" x="103" y="427" width="168" height="30"/>
