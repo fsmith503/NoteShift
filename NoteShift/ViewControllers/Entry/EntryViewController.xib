@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EntryViewController" customModule="NoteShift" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="VW4-f0-mND" id="5DI-dG-oZc"/>
                 <outlet property="loginButton" destination="4vD-73-lwo" id="gli-Ur-6U5"/>
                 <outlet property="passwordField" destination="UGQ-eg-dXO" id="eFs-ex-dct"/>
                 <outlet property="signupButton" destination="6eH-C3-7GF" id="PzN-Iv-Vhi"/>
@@ -23,6 +24,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="screenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Msc-80-cqE">
+                    <rect key="frame" x="57" y="102" width="260" height="201"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Noteshift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NR-X9-e3g">
                     <rect key="frame" x="82" y="300" width="211" height="66"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -67,11 +73,10 @@
                         <action selector="buttonPressedSignup" destination="-1" eventType="touchUpInside" id="coD-vA-pdB"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="screenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Msc-80-cqE">
-                    <rect key="frame" x="57" y="102" width="260" height="201"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="VW4-f0-mND">
+                    <rect key="frame" x="177" y="577" width="20" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </imageView>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="0.034371488829999998" green="0.73485938719999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
