@@ -29,6 +29,9 @@
 		3794A2E0228B8583004A96C0 /* CheckoutTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3794A2DE228B8583004A96C0 /* CheckoutTextTableViewCell.xib */; };
 		3794A2E3228B8846004A96C0 /* DeisgnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2E1228B8846004A96C0 /* DeisgnTableViewCell.swift */; };
 		3794A2E4228B8846004A96C0 /* DeisgnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3794A2E2228B8846004A96C0 /* DeisgnTableViewCell.xib */; };
+		3794A2E8228BA3D4004A96C0 /* ObjectHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2E7228BA3D4004A96C0 /* ObjectHelpers.swift */; };
+		3794A2EA228BA42D004A96C0 /* cellHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2E9228BA42D004A96C0 /* cellHelper.swift */; };
+		3794A2EC228BAC19004A96C0 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2EB228BAC19004A96C0 /* ViewHelper.swift */; };
 		37C844B2228B10AC00BA5345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C844B1228B10AC00BA5345 /* AppDelegate.swift */; };
 		37C844B4228B10AC00BA5345 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C844B3228B10AC00BA5345 /* ViewController.swift */; };
 		37C844B7228B10AC00BA5345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C844B5228B10AC00BA5345 /* Main.storyboard */; };
@@ -82,6 +85,9 @@
 		3794A2DE228B8583004A96C0 /* CheckoutTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutTextTableViewCell.xib; sourceTree = "<group>"; };
 		3794A2E1228B8846004A96C0 /* DeisgnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeisgnTableViewCell.swift; sourceTree = "<group>"; };
 		3794A2E2228B8846004A96C0 /* DeisgnTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeisgnTableViewCell.xib; sourceTree = "<group>"; };
+		3794A2E7228BA3D4004A96C0 /* ObjectHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectHelpers.swift; sourceTree = "<group>"; };
+		3794A2E9228BA42D004A96C0 /* cellHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellHelper.swift; sourceTree = "<group>"; };
+		3794A2EB228BAC19004A96C0 /* ViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
 		37C844AE228B10AC00BA5345 /* NoteShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C844B1228B10AC00BA5345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37C844B3228B10AC00BA5345 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +229,9 @@
 				37C844E5228B11EB00BA5345 /* TabBar */,
 				37C844E0228B116100BA5345 /* Entry */,
 				3794A2D2228B7557004A96C0 /* JournalClass.swift */,
+				3794A2E7228BA3D4004A96C0 /* ObjectHelpers.swift */,
+				3794A2E9228BA42D004A96C0 /* cellHelper.swift */,
+				3794A2EB228BAC19004A96C0 /* ViewHelper.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -432,11 +441,13 @@
 				37C844B4228B10AC00BA5345 /* ViewController.swift in Sources */,
 				3794A2E3228B8846004A96C0 /* DeisgnTableViewCell.swift in Sources */,
 				3794A2C6228B4769004A96C0 /* UIFontExtension.swift in Sources */,
+				3794A2E8228BA3D4004A96C0 /* ObjectHelpers.swift in Sources */,
 				37C844B2228B10AC00BA5345 /* AppDelegate.swift in Sources */,
 				3794A2D3228B7557004A96C0 /* JournalClass.swift in Sources */,
 				3703D45A228B450C00125345 /* JournalsViewController.swift in Sources */,
 				3703D466228B454C00125345 /* EntryViewController.swift in Sources */,
 				3794A2D8228B7F2C004A96C0 /* CheckoutViewController.swift in Sources */,
+				3794A2EC228BAC19004A96C0 /* ViewHelper.swift in Sources */,
 				3794A2DF228B8583004A96C0 /* CheckoutTextTableViewCell.swift in Sources */,
 				3703D45E228B451D00125345 /* CalendarViewController.swift in Sources */,
 				37C844FC228B183900BA5345 /* NSNavigationController.swift in Sources */,
@@ -445,6 +456,7 @@
 				3794A2C8228B4776004A96C0 /* UIColorExtension.swift in Sources */,
 				3703D462228B452900125345 /* TabBarViewController.swift in Sources */,
 				3703D456228B44FC00125345 /* WriteViewController.swift in Sources */,
+				3794A2EA228BA42D004A96C0 /* cellHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
