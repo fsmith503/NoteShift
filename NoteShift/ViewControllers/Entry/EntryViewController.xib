@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EntryViewController" customModule="NoteShift" customModuleProvider="target">
             <connections>
                 <outlet property="loginButton" destination="4vD-73-lwo" id="gli-Ur-6U5"/>
+                <outlet property="passwordField" destination="UGQ-eg-dXO" id="eFs-ex-dct"/>
                 <outlet property="signupButton" destination="6eH-C3-7GF" id="PzN-Iv-Vhi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

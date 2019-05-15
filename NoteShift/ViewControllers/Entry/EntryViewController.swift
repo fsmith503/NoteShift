@@ -12,12 +12,15 @@ class EntryViewController: UIViewController {
     
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var signupButton: UIButton!
+    @IBOutlet var passwordField: UITextField!
+    //texfield.secureTextEntry = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.NoteshiftColors.AppBlue
+        passwordField.isSecureTextEntry = true
 //        f
    }
     
