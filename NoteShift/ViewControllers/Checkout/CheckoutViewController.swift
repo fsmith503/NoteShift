@@ -22,6 +22,7 @@ class CheckoutViewController: UIViewController {
         let nib = UINib(nibName: "DeisgnTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "cellId")
         self.tableView.layoutMargins = UIEdgeInsets.zero;
+        tableView.backgroundColor = UIColor.NoteshiftColors.AppBlue
         
     }
 
@@ -37,6 +38,7 @@ extension CheckoutViewController: UITableViewDelegate, UITableViewDataSource, UI
         if cell == nil {
             cell = DeisgnTableViewCell()
         }
+        cell?.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
         if indexPath[1] == 0 {
             var cell: CheckoutTextTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cellId") as? CheckoutTextTableViewCell
             cell?.label.text = "Select A Design For Your Journal"
