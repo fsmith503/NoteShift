@@ -18,6 +18,7 @@ class JournalsViewController: UIViewController {
         //table view
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.backgroundColor = UIColor.NoteshiftColors.AppBlue
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.singleLine
         self.tableView.layoutMargins = UIEdgeInsets.zero;
 
@@ -42,6 +43,8 @@ extension JournalsViewController: UITableViewDelegate, UITableViewDataSource {
         if cell == nil {
             cell = JournalTableViewCell()
         }
+        cell?.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
+        cell?.textLabel?.textColor = UIColor.white
         
         cell?.textLabel?.text = "Journal Entry"
         //cell?.textLabel?.text = "Journal Entry"//user1Array[indexPath.row].name
@@ -62,7 +65,7 @@ extension JournalsViewController: UITableViewDelegate, UITableViewDataSource {
             cell?.textLabel?.text = "'I have so much homework :/' 5/15/19 3:00AM"
         }
         if indexPath == [0,5]{
-            cell?.textLabel?.text = "'I had a greate Dinner' 5/19/19 3:30PM"
+            cell?.textLabel?.text = "'I had a great Dinner' 5/19/19 3:30PM"
         }
         if indexPath == [0,6]{
             cell?.textLabel?.text = "'I went to a concert' 5/15/19 12:00PM"

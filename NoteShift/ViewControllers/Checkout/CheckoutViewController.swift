@@ -21,11 +21,8 @@ class CheckoutViewController: UIViewController {
         tableView.delegate = self
         let nib = UINib(nibName: "DeisgnTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "cellId")
-        //self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.tableView.layoutMargins = UIEdgeInsets.zero;
-        //self.tableView.contentInset = UIEdgeInsets(top: -20, left: 0, bottom: -20, right: 0);
-        //self.view.addSubview(self.tableView)
-        //tableView.separatorColor = UIColor.clear
+        
     }
 
 // MARK: - Helpers for UITableViewDataSource
