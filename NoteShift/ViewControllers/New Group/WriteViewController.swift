@@ -13,6 +13,7 @@ class WriteViewController: UIViewController {
     
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var saveButton: UIButton!
+    @IBOutlet var titleField: UITextField!
     @IBOutlet var textField: UITextView!
 
     override func viewDidLoad() {
@@ -23,6 +24,9 @@ class WriteViewController: UIViewController {
         formatter.dateFormat = "MM.dd.yyyy HH:mm:ss"
         let result = formatter.string(from: date)
         dateLabel.text = result
+        saveButton.layer.cornerRadius = 5
+        saveButton.layer.borderWidth = 1
+        saveButton.layer.borderColor = UIColor.white.cgColor
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,18 +34,19 @@ class WriteViewController: UIViewController {
     }
 
     @IBAction func saveButtonPressed(_ sender: Any) {
-        if(self.textField.text == ""){
-            let alert = UIAlertController(title: "Please enter words into your journal before saving.", message: "", preferredStyle: .alert)
+        if(self.textField.text == "" || self.textField.text == "Begin Journal Entry Here:)" || self.titleField.text == "" || self.titleField.text == "Journal Title"){
+            let alert = UIAlertController(title: "Please enter words into your title or journal before saving.", message: "", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
         }
-        let alert = UIAlertController(title: "Your Journal Entry Has Been Saved :)", message: "", preferredStyle: .alert)
+        else{
+            let alert = UIAlertController(title: "Your Journal Entry '" + titleField.text! + "' Has Been Saved :)", message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         self.textField.text = ""
-        
-        
+        self.titleField.text = ""
+        }
     }
 
 }
