@@ -15,6 +15,7 @@ class CheckoutTextTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         self.label.text = "Select A Design For Your Journal"
+        self.label.backgroundColor = UIColor.NoteshiftColors.AppBlue
         super.awakeFromNib()
     }
     

@@ -19,6 +19,12 @@
 		3703D468228B455000125345 /* EntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3703D467228B455000125345 /* EntryViewController.xib */; };
 		373BE5E2228CA8F300B91F64 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373BE5E0228CA8F300B91F64 /* ProfileViewController.swift */; };
 		373BE5E3228CA8F300B91F64 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 373BE5E1228CA8F300B91F64 /* ProfileViewController.xib */; };
+		376F2B162290798200017D7E /* NumberPagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F2B142290798200017D7E /* NumberPagesTableViewCell.swift */; };
+		376F2B172290798200017D7E /* NumberPagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376F2B152290798200017D7E /* NumberPagesTableViewCell.xib */; };
+		376F2B1A22907ECC00017D7E /* VisaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F2B1822907ECC00017D7E /* VisaTableViewCell.swift */; };
+		376F2B1B22907ECC00017D7E /* VisaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376F2B1922907ECC00017D7E /* VisaTableViewCell.xib */; };
+		376F2B1E2290806700017D7E /* TotalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F2B1C2290806700017D7E /* TotalTableViewCell.swift */; };
+		376F2B1F2290806700017D7E /* TotalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376F2B1D2290806700017D7E /* TotalTableViewCell.xib */; };
 		3794A2C6228B4769004A96C0 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2C5228B4769004A96C0 /* UIFontExtension.swift */; };
 		3794A2C8228B4776004A96C0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2C7228B4776004A96C0 /* UIColorExtension.swift */; };
 		3794A2CB228B486F004A96C0 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2CA228B486F004A96C0 /* ColorHelper.swift */; };
@@ -77,6 +83,12 @@
 		3703D467228B455000125345 /* EntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryViewController.xib; sourceTree = "<group>"; };
 		373BE5E0228CA8F300B91F64 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		373BE5E1228CA8F300B91F64 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		376F2B142290798200017D7E /* NumberPagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPagesTableViewCell.swift; sourceTree = "<group>"; };
+		376F2B152290798200017D7E /* NumberPagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPagesTableViewCell.xib; sourceTree = "<group>"; };
+		376F2B1822907ECC00017D7E /* VisaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisaTableViewCell.swift; sourceTree = "<group>"; };
+		376F2B1922907ECC00017D7E /* VisaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisaTableViewCell.xib; sourceTree = "<group>"; };
+		376F2B1C2290806700017D7E /* TotalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTableViewCell.swift; sourceTree = "<group>"; };
+		376F2B1D2290806700017D7E /* TotalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalTableViewCell.xib; sourceTree = "<group>"; };
 		3794A2C5228B4769004A96C0 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		3794A2C7228B4776004A96C0 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		3794A2CA228B486F004A96C0 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
@@ -172,6 +184,12 @@
 				3794A2DE228B8583004A96C0 /* CheckoutTextTableViewCell.xib */,
 				3794A2E1228B8846004A96C0 /* DeisgnTableViewCell.swift */,
 				3794A2E2228B8846004A96C0 /* DeisgnTableViewCell.xib */,
+				376F2B142290798200017D7E /* NumberPagesTableViewCell.swift */,
+				376F2B152290798200017D7E /* NumberPagesTableViewCell.xib */,
+				376F2B1822907ECC00017D7E /* VisaTableViewCell.swift */,
+				376F2B1922907ECC00017D7E /* VisaTableViewCell.xib */,
+				376F2B1C2290806700017D7E /* TotalTableViewCell.swift */,
+				376F2B1D2290806700017D7E /* TotalTableViewCell.xib */,
 			);
 			path = Checkout;
 			sourceTree = "<group>";
@@ -418,10 +436,13 @@
 				37C844BC228B10AD00BA5345 /* LaunchScreen.storyboard in Resources */,
 				3794A2D1228B6B1D004A96C0 /* JournalTableViewCell.xib in Resources */,
 				3794A2E0228B8583004A96C0 /* CheckoutTextTableViewCell.xib in Resources */,
+				376F2B1F2290806700017D7E /* TotalTableViewCell.xib in Resources */,
 				3703D460228B452300125345 /* CalendarViewController.xib in Resources */,
 				37FB98DC228B3FD800636C1D /* LaunchScreen.storyboard in Resources */,
 				37FB98DD228B3FD800636C1D /* Main.storyboard in Resources */,
+				376F2B172290798200017D7E /* NumberPagesTableViewCell.xib in Resources */,
 				3703D468228B455000125345 /* EntryViewController.xib in Resources */,
+				376F2B1B22907ECC00017D7E /* VisaTableViewCell.xib in Resources */,
 				3794A2D9228B7F2C004A96C0 /* CheckoutViewController.xib in Resources */,
 				373BE5E3228CA8F300B91F64 /* ProfileViewController.xib in Resources */,
 				37C844B9228B10AD00BA5345 /* Assets.xcassets in Resources */,
@@ -469,10 +490,13 @@
 				37C844FC228B183900BA5345 /* NSNavigationController.swift in Sources */,
 				3794A2D0228B6B1D004A96C0 /* JournalTableViewCell.swift in Sources */,
 				3794A2CB228B486F004A96C0 /* ColorHelper.swift in Sources */,
+				376F2B162290798200017D7E /* NumberPagesTableViewCell.swift in Sources */,
 				3794A2C8228B4776004A96C0 /* UIColorExtension.swift in Sources */,
 				3703D462228B452900125345 /* TabBarViewController.swift in Sources */,
 				3703D456228B44FC00125345 /* WriteViewController.swift in Sources */,
+				376F2B1A22907ECC00017D7E /* VisaTableViewCell.swift in Sources */,
 				3794A2EA228BA42D004A96C0 /* cellHelper.swift in Sources */,
+				376F2B1E2290806700017D7E /* TotalTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
