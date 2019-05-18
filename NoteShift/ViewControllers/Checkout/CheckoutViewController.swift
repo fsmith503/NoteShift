@@ -44,6 +44,7 @@ extension CheckoutViewController: UITableViewDelegate, UITableViewDataSource, UI
             cell?.label.text = "Select A Design For Your Journal"
             cell?.textLabel!.text = "Select A Design For Your Journal"
             //cell?.selectionStyle = UITableViewCell.SelectionStyle.none
+            cell?.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
             if cell == nil {
                 cell = CheckoutTextTableViewCell()
             }

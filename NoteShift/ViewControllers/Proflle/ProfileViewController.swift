@@ -15,6 +15,8 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.NoteshiftColors.AppBlue
+        logoutButton.titleLabel?.textColor = UIColor.white
+        
 
         // Do any additional setup after loading the view.
     }
