@@ -12,7 +12,7 @@ class TabBarViewController: UITabBarController {
     
     var JournalsVC: JournalsViewController?
     //var CalendarVC: CalendarViewController?
-    var CheckoutVC: CheckoutViewController?
+    var CheckoutVC: RealTableViewController?
     var WriteVC: WriteViewController?
     var ProfileVC: ProfileViewController?
     var subviewControllers:[UIViewController] = []
@@ -42,7 +42,7 @@ class TabBarViewController: UITabBarController {
         WriteVC?.tabBarItem.selectedImage = UIImage(named: "edit")?.withRenderingMode(.alwaysOriginal)
         WriteVC?.tabBarItem.image = UIImage(named: "edit")?.withRenderingMode(.alwaysOriginal)
         
-        CheckoutVC = CheckoutViewController()
+        CheckoutVC = RealTableViewController()
         CheckoutVC?.title = NSLocalizedString("Checkout", comment: "TabNameForMenu")
         CheckoutVC?.tabBarItem.title = NSLocalizedString("Checkout", comment: "TabNameForMenu")
         CheckoutVC?.tabBarItem.selectedImage = UIImage(named: "credit_card")?.withRenderingMode(.alwaysOriginal)

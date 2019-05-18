@@ -25,6 +25,8 @@
 		376F2B1B22907ECC00017D7E /* VisaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376F2B1922907ECC00017D7E /* VisaTableViewCell.xib */; };
 		376F2B1E2290806700017D7E /* TotalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F2B1C2290806700017D7E /* TotalTableViewCell.swift */; };
 		376F2B1F2290806700017D7E /* TotalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376F2B1D2290806700017D7E /* TotalTableViewCell.xib */; };
+		376F2B222290967D00017D7E /* RealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F2B202290967D00017D7E /* RealTableViewController.swift */; };
+		376F2B232290967D00017D7E /* RealTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376F2B212290967D00017D7E /* RealTableViewController.xib */; };
 		3794A2C6228B4769004A96C0 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2C5228B4769004A96C0 /* UIFontExtension.swift */; };
 		3794A2C8228B4776004A96C0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2C7228B4776004A96C0 /* UIColorExtension.swift */; };
 		3794A2CB228B486F004A96C0 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794A2CA228B486F004A96C0 /* ColorHelper.swift */; };
@@ -89,6 +91,8 @@
 		376F2B1922907ECC00017D7E /* VisaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisaTableViewCell.xib; sourceTree = "<group>"; };
 		376F2B1C2290806700017D7E /* TotalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTableViewCell.swift; sourceTree = "<group>"; };
 		376F2B1D2290806700017D7E /* TotalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalTableViewCell.xib; sourceTree = "<group>"; };
+		376F2B202290967D00017D7E /* RealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTableViewController.swift; sourceTree = "<group>"; };
+		376F2B212290967D00017D7E /* RealTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTableViewController.xib; sourceTree = "<group>"; };
 		3794A2C5228B4769004A96C0 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		3794A2C7228B4776004A96C0 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		3794A2CA228B486F004A96C0 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				376F2B1922907ECC00017D7E /* VisaTableViewCell.xib */,
 				376F2B1C2290806700017D7E /* TotalTableViewCell.swift */,
 				376F2B1D2290806700017D7E /* TotalTableViewCell.xib */,
+				376F2B202290967D00017D7E /* RealTableViewController.swift */,
+				376F2B212290967D00017D7E /* RealTableViewController.xib */,
 			);
 			path = Checkout;
 			sourceTree = "<group>";
@@ -434,6 +440,7 @@
 				3703D464228B452E00125345 /* TabBarViewController.xib in Resources */,
 				3703D45C228B451300125345 /* JournalsViewController.xib in Resources */,
 				37C844BC228B10AD00BA5345 /* LaunchScreen.storyboard in Resources */,
+				376F2B232290967D00017D7E /* RealTableViewController.xib in Resources */,
 				3794A2D1228B6B1D004A96C0 /* JournalTableViewCell.xib in Resources */,
 				3794A2E0228B8583004A96C0 /* CheckoutTextTableViewCell.xib in Resources */,
 				376F2B1F2290806700017D7E /* TotalTableViewCell.xib in Resources */,
@@ -477,6 +484,7 @@
 				37C844B4228B10AC00BA5345 /* ViewController.swift in Sources */,
 				3794A2E3228B8846004A96C0 /* DeisgnTableViewCell.swift in Sources */,
 				373BE5E2228CA8F300B91F64 /* ProfileViewController.swift in Sources */,
+				376F2B222290967D00017D7E /* RealTableViewController.swift in Sources */,
 				3794A2C6228B4769004A96C0 /* UIFontExtension.swift in Sources */,
 				3794A2E8228BA3D4004A96C0 /* ObjectHelpers.swift in Sources */,
 				37C844B2228B10AC00BA5345 /* AppDelegate.swift in Sources */,

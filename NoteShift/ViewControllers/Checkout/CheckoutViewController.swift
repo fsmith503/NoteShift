@@ -21,17 +21,18 @@ class CheckoutViewController: UIViewController {
         tableView.delegate = self
         let nib = UINib(nibName: "DeisgnTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "cellId")
-        self.tableView.layoutMargins = UIEdgeInsets.zero;
+        //self.tableView.layoutMargins = UIEdgeInsets.zero;
         tableView.backgroundColor = UIColor.NoteshiftColors.AppBlue
-        tableView.tableFooterView = UIView()
-        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-        tableView.separatorColor = UIColor.clear
+        //tableView.tableFooterView = UIView()
+        //tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        //tableView.separatorColor = UIColor.clear
         //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.register(UINib(nibName: "CheckoutTextTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellOne")
         tableView.register(UINib(nibName: "DesignTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellTwo")
         tableView.register(UINib(nibName: "NumberPagesTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellThree")
         tableView.register(UINib(nibName: "VisaTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellFour")
         tableView.register(UINib(nibName: "TotalTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellFive")
+        tableView.tableFooterView = UIView()
         
     }
 
@@ -83,7 +84,7 @@ extension CheckoutViewController: UITableViewDelegate, UITableViewDataSource, UI
             
         }
         if indexPath[1] == 3 {
-            var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellThree", for: indexPath) as! NumberPagesTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellThree", for: indexPath) as! NumberPagesTableViewCell
             cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
             //cell?.designImage?.image = UIImage(named: "design4")
             //cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
@@ -91,7 +92,7 @@ extension CheckoutViewController: UITableViewDelegate, UITableViewDataSource, UI
             
         }
         if indexPath[1] == 4 {
-            var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellFour", for: indexPath) as! VisaTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellFour", for: indexPath) as! VisaTableViewCell
             cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
             //cell?.designImage?.image = UIImage(named: "design5")
             //cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
@@ -99,7 +100,7 @@ extension CheckoutViewController: UITableViewDelegate, UITableViewDataSource, UI
             
         }
         if indexPath[1] == 5 {
-            var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellFive", for: indexPath) as! TotalTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellFive", for: indexPath) as! TotalTableViewCell
             cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
             //cell?.designImage?.image = UIImage(named: "design6")
             //cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
@@ -154,16 +155,14 @@ extension CheckoutViewController: UITableViewDelegate, UITableViewDataSource, UI
         return 6
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //print("section: \(indexPath.section)")
         //print("row: \(indexPath.row)")
         //let cell:DeisgnTableViewCell = tableView.cellForRow(at: indexPath) as! DeisgnTableViewCell
         //if indexPath[1] == 2{
             //cell.checkmarkImage.isHidden = false
         //}
-    }
+    //}
     
-
-
 }
 
