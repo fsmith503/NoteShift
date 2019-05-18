@@ -20,6 +20,25 @@ class EntryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.activityIndicator.isHidden = true
+        loginButton.backgroundColor = UIColor.NoteshiftColors.AppBlue
+        passwordField.backgroundColor = UIColor.NoteshiftColors.AppBlue
+        passwordField.textColor = UIColor.white
+        emailField.textColor = UIColor.white
+        signupButton.backgroundColor = UIColor.NoteshiftColors.AppBlue
+        emailField.backgroundColor = UIColor.NoteshiftColors.AppBlue
+        signupButton.layer.cornerRadius = 5
+        signupButton.layer.borderWidth = 1
+        signupButton.layer.borderColor = UIColor.white.cgColor
+        loginButton.layer.cornerRadius = 5
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.borderColor = UIColor.white.cgColor
+        emailField.layer.cornerRadius = 5
+        emailField.layer.borderWidth = 1
+        emailField.layer.borderColor = UIColor.white.cgColor
+        passwordField.layer.cornerRadius = 5
+        passwordField.layer.borderWidth = 1
+        passwordField.layer.borderColor = UIColor.white.cgColor
+
 
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.NoteshiftColors.AppBlue
