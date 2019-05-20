@@ -14,6 +14,7 @@ class NumberPagesTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        numberLabel?.text = String(30)
         // Initialization code
     }
     

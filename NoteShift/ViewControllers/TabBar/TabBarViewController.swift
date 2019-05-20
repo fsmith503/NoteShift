@@ -68,9 +68,10 @@ class TabBarViewController: UITabBarController {
         //subviewControllers.append(WriteNavigationController!)
         //self.viewControllers = subviewControllers
         subviewControllers.append(WriteNavigationController!)
+        subviewControllers.append(ProfileNavigationController!)
         subviewControllers.append(JournalNavigationController!)
         subviewControllers.append(CheckoutNavigationController!)
-        subviewControllers.append(ProfileNavigationController!)
+        //subviewControllers.append(ProfileNavigationController!)
         //subviewControllers.append(CalendarNavigationController!)
         self.viewControllers = subviewControllers
         
