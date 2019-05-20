@@ -38,6 +38,7 @@ class RealTableViewController: UIViewController {
         tableView.register(UINib(nibName: "NumberPagesTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellThree")
         tableView.register(UINib(nibName: "VisaTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellFour")
         tableView.register(UINib(nibName: "TotalTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellFive")
+        tableView.register(UINib(nibName: "AddressTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellSix")
         
     }
     
@@ -53,49 +54,40 @@ extension RealTableViewController: UITableViewDelegate, UITableViewDataSource, U
             cell = DeisgnTableViewCell()
         }
         cell?.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
-        //        if indexPath[1] == 0 {
-        //            //let cell = tableView.dequeueReusableCellWithIdentifier("CustomCellOne", forIndexPath: indexPath) as! CustomOneCell
-        //            var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellOne", for: indexPath) as! CheckoutTextTableViewCell
-        //            //var cell: CheckoutTextTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cellId") as? CheckoutTextTableViewCell
-        //            //cell.label.text = "Select A Design For Your Journal"
-        //            //cell.textLabel!.text = "Select A Design For Your Journal"
-        //            //cell?.selectionStyle = UITableViewCell.SelectionStyle.none
-        //            cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
-        //            cell.label.textColor = UIColor.white
-        ////            if cell == nil {
-        ////                cell = CheckoutTextTableViewCell()
-        ////            }
-        //            cell.selectionStyle = UITableViewCell.SelectionStyle.none
-        //
-        //            return cell
-        //        }
-        if indexPath[1] == 0 {
+                if indexPath[1] == 0 {
+                    let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellOne", for: indexPath) as! CheckoutTextTableViewCell
+                    cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
+                    return cell
+                }
+        if indexPath[1] == 1 {
             //var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellOne", for: indexPath) as! CheckoutTextTableViewCell
             cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
             cell?.designImage?.image = UIImage(named: "design1")
             cell?.checkmarkImage?.isHidden = true
         }
-        if indexPath[1] == 1 {
+        if indexPath[1] == 2 {
             cell?.designImage?.image = UIImage(named: "design2")
             cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
             cell?.checkmarkImage?.isHidden = false
             
         }
-        if indexPath[1] == 2 {
+        if indexPath[1] == 3 {
             cell?.designImage?.image = UIImage(named: "design3")
             cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
             cell?.checkmarkImage?.isHidden = true
             
         }
-        if indexPath[1] == 3 {
+        if indexPath[1] == 4 {
             var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellThree", for: indexPath) as! NumberPagesTableViewCell
             cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
+            //cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
+            cell.imageView?.image = nil //UIImage(named: "")
             //cell?.designImage?.image = UIImage(named: "design4")
             //cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
             //cell?.checkmarkImage?.isHidden = true
             
         }
-        if indexPath[1] == 4 {
+        if indexPath[1] == 5{
             var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellFour", for: indexPath) as! VisaTableViewCell
             cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
             //cell?.designImage?.image = UIImage(named: "design5")
@@ -103,8 +95,15 @@ extension RealTableViewController: UITableViewDelegate, UITableViewDataSource, U
             //cell?.checkmarkImage?.isHidden = true
             
         }
-        if indexPath[1] == 5 {
-            var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellFive", for: indexPath) as! TotalTableViewCell
+        if indexPath[1] == 6 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellSix", for: indexPath) as! AddressTableViewCell
+            cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
+            //cell?.designImage?.image = UIImage(named: "design6")
+            //cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
+            //cell?.checkmarkImage?.isHidden = true
+        }
+        if indexPath[1] == 7 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellFive", for: indexPath) as! TotalTableViewCell
             cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
             //cell?.designImage?.image = UIImage(named: "design6")
             //cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
@@ -146,7 +145,7 @@ extension RealTableViewController: UITableViewDelegate, UITableViewDataSource, U
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath[1] == 0 {
-            return 150
+            return 50
         }
         return 150
     }
@@ -156,7 +155,7 @@ extension RealTableViewController: UITableViewDelegate, UITableViewDataSource, U
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 8
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

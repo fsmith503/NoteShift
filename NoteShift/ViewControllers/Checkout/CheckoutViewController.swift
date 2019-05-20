@@ -32,6 +32,7 @@ class CheckoutViewController: UIViewController {
         tableView.register(UINib(nibName: "NumberPagesTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellThree")
         tableView.register(UINib(nibName: "VisaTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellFour")
         tableView.register(UINib(nibName: "TotalTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellFive")
+        tableView.register(UINib(nibName: "AdressTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCellSix")
         tableView.tableFooterView = UIView()
         
     }
@@ -50,20 +51,22 @@ extension CheckoutViewController: UITableViewDelegate, UITableViewDataSource, UI
         }
         cell?.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
 //        if indexPath[1] == 0 {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellOne", for: indexPath) as! CheckoutTextTableViewCell
+//            cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
 //            //let cell = tableView.dequeueReusableCellWithIdentifier("CustomCellOne", forIndexPath: indexPath) as! CustomOneCell
-//            var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellOne", for: indexPath) as! CheckoutTextTableViewCell
+//           // var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellOne", for: indexPath) as! CheckoutTextTableViewCell
 //            //var cell: CheckoutTextTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cellId") as? CheckoutTextTableViewCell
 //            //cell.label.text = "Select A Design For Your Journal"
 //            //cell.textLabel!.text = "Select A Design For Your Journal"
 //            //cell?.selectionStyle = UITableViewCell.SelectionStyle.none
 //            cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
-//            cell.label.textColor = UIColor.white
+//            //cell.label.textColor = UIColor.white
 ////            if cell == nil {
 ////                cell = CheckoutTextTableViewCell()
 ////            }
 //            cell.selectionStyle = UITableViewCell.SelectionStyle.none
 //
-//            return cell
+//            //nreturn cell
 //        }
         if indexPath[1] == 0 {
         //var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellOne", for: indexPath) as! CheckoutTextTableViewCell
@@ -100,6 +103,13 @@ extension CheckoutViewController: UITableViewDelegate, UITableViewDataSource, UI
             
         }
         if indexPath[1] == 5 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellSix", for: indexPath) as! AddressTableViewCell
+            cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
+            //cell?.designImage?.image = UIImage(named: "design6")
+            //cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
+            //cell?.checkmarkImage?.isHidden = true
+        }
+        if indexPath[1] == 6 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellFive", for: indexPath) as! TotalTableViewCell
             cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
             //cell?.designImage?.image = UIImage(named: "design6")
@@ -152,7 +162,7 @@ extension CheckoutViewController: UITableViewDelegate, UITableViewDataSource, UI
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
     //func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
