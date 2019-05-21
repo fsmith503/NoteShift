@@ -40,10 +40,10 @@ extension JournalsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // set up cell
-        var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellOne", for: indexPath) as! JournalTableViewCell
-        if cell == nil {
-            cell = JournalTableViewCell()
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellOne", for: indexPath) as! JournalTableViewCell
+//        if cell == nil {
+//            cell = JournalTableViewCell()
+//        }
         cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
         //cell.textLabel?.textColor = UIColor.white
         cell.editPic.image = UIImage(named: "edit")

@@ -78,7 +78,7 @@ extension RealTableViewController: UITableViewDelegate, UITableViewDataSource, U
             
         }
         if indexPath[1] == 4 {
-            var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellThree", for: indexPath) as! NumberPagesTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellThree", for: indexPath) as! NumberPagesTableViewCell
             cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
             //cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
             cell.imageView?.image = nil //UIImage(named: "")
@@ -88,7 +88,7 @@ extension RealTableViewController: UITableViewDelegate, UITableViewDataSource, U
             
         }
         if indexPath[1] == 5{
-            var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellFour", for: indexPath) as! VisaTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellFour", for: indexPath) as! VisaTableViewCell
             cell.contentView.backgroundColor = UIColor.NoteshiftColors.AppBlue
             //cell?.designImage?.image = UIImage(named: "design5")
             //cell?.checkmarkImage?.image = UIImage(named: "checkmark_green")
