@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import IQKeyboardManager
+
 
 
 class EntryViewController: UIViewController {
@@ -21,7 +21,7 @@ class EntryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        IQKeyboardManager.shared().isEnabled = true
+        //IQKeyboardManager.shared().isEnabled = true
         //self.activityIndicator.isHidden = true
         loginButton.backgroundColor = UIColor.NoteshiftColors.AppBlue
         passwordField.backgroundColor = UIColor.NoteshiftColors.AppBlue
