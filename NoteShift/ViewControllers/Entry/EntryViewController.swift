@@ -53,6 +53,13 @@ class EntryViewController: UIViewController {
 //        let vc = TabBarViewController(nibName: "TabBarViewController", bundle: nil)
 //        self.present(vc, animated: true, completion: nil)
     }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+        // do aditional stuff
+    }
+    
+ 
 
 
     // MARK: - Button Actions
@@ -95,4 +102,12 @@ class EntryViewController: UIViewController {
         }
     }
     
+}
+
+extension UIViewController {
+    func hideKeyboard1(_ selector: Selector) {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: selector)
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
 }

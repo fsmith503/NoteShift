@@ -24,45 +24,63 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSM-BB-f8V">
-                    <rect key="frame" x="63" y="44" width="238" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSM-BB-f8V">
+                    <rect key="frame" x="68.666666666666686" y="44" width="238" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="238" id="At8-Iv-ytJ"/>
+                        <constraint firstAttribute="height" constant="50" id="dRD-Wp-yaD"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Begin Journal Entry Here:)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gv5-vt-LyN">
-                    <rect key="frame" x="16" y="198" width="349" height="458"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Begin Journal Entry Here:)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gv5-vt-LyN">
+                    <rect key="frame" x="13" y="198" width="349" height="458"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="349" id="NgV-88-qVa"/>
+                        <constraint firstAttribute="height" constant="458" id="WWH-kV-5PV"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Journal Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpw-Be-Pmz">
-                    <rect key="frame" x="134" y="102" width="99" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpw-Be-Pmz">
+                    <rect key="frame" x="138" y="102" width="99" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="eBI-vH-5fI"/>
+                        <constraint firstAttribute="width" constant="99" id="eHn-bW-iIh"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Journal Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5HF-X4-cCw">
-                    <rect key="frame" x="16" y="131" width="349" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Journal Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5HF-X4-cCw">
+                    <rect key="frame" x="13" y="131" width="349" height="30"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="349" id="4Oq-JP-ER3"/>
+                        <constraint firstAttribute="height" constant="30" id="cic-M4-GuI"/>
+                    </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Journal Entry:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P4-fb-cUZ">
-                    <rect key="frame" x="131" y="169" width="106" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal Entry:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P4-fb-cUZ">
+                    <rect key="frame" x="134.66666666666666" y="169" width="106" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="1Y2-c6-cn4"/>
+                        <constraint firstAttribute="width" constant="106" id="qPX-67-H1W"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJG-pX-3dA">
-                    <rect key="frame" x="134" y="664" width="101" height="58"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJG-pX-3dA">
+                    <rect key="frame" x="137" y="664" width="101" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="101" id="3Wq-7I-r7t"/>
+                        <constraint firstAttribute="height" constant="58" id="tb7-iL-sey"/>
+                    </constraints>
                     <state key="normal" title="Save">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -72,6 +90,21 @@
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.82954106660000004" green="0.32666925429999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JJG-pX-3dA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Et-Nv-5XI"/>
+                <constraint firstItem="8P4-fb-cUZ" firstAttribute="top" secondItem="5HF-X4-cCw" secondAttribute="bottom" constant="8" id="3nx-nw-2H9"/>
+                <constraint firstItem="Cpw-Be-Pmz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6Nh-6F-WcB"/>
+                <constraint firstItem="gv5-vt-LyN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="A3d-iR-pkL"/>
+                <constraint firstItem="5HF-X4-cCw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SGl-nN-pUN"/>
+                <constraint firstItem="gv5-vt-LyN" firstAttribute="top" secondItem="8P4-fb-cUZ" secondAttribute="bottom" constant="8" id="axi-92-KJ9"/>
+                <constraint firstItem="JJG-pX-3dA" firstAttribute="top" secondItem="gv5-vt-LyN" secondAttribute="bottom" constant="8" id="cpZ-R5-0EC"/>
+                <constraint firstItem="Cpw-Be-Pmz" firstAttribute="top" secondItem="gSM-BB-f8V" secondAttribute="bottom" constant="8" id="czJ-th-zjS"/>
+                <constraint firstItem="5HF-X4-cCw" firstAttribute="top" secondItem="Cpw-Be-Pmz" secondAttribute="bottom" constant="8" id="mBn-iv-2VD"/>
+                <constraint firstItem="gSM-BB-f8V" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="oBy-x5-i3Q"/>
+                <constraint firstItem="gSM-BB-f8V" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oZG-7l-dFR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JJG-pX-3dA" secondAttribute="bottom" constant="56" id="ryc-w3-SEa"/>
+                <constraint firstItem="8P4-fb-cUZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wOR-wG-zFb"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="53.600000000000001" y="48.029556650246306"/>
         </view>

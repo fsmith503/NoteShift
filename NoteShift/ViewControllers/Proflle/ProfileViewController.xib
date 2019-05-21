@@ -37,40 +37,68 @@
                     <rect key="frame" x="43" y="45" width="37" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Noteshift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWb-Ot-xGB">
-                    <rect key="frame" x="106" y="44" width="164" height="46"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noteshift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWb-Ot-xGB">
+                    <rect key="frame" x="105.66666666666669" y="44" width="164" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="164" id="18x-fm-w8W"/>
+                        <constraint firstAttribute="height" constant="46" id="YHr-b4-qN3"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="41"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilepicFB" translatesAutoresizingMaskIntoConstraints="NO" id="fUR-ge-VB2">
-                    <rect key="frame" x="65" y="130" width="244" height="219"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilepicFB" translatesAutoresizingMaskIntoConstraints="NO" id="fUR-ge-VB2">
+                    <rect key="frame" x="65.666666666666686" y="130" width="244" height="219"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="219" id="CeM-M9-Azd"/>
+                        <constraint firstAttribute="width" constant="244" id="URb-Fz-IlP"/>
+                    </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Glenn Koffwood" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqz-Jg-lIG">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glenn Koffwood" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqz-Jg-lIG">
                     <rect key="frame" x="105" y="377" width="165" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="1dm-nE-nCv"/>
+                        <constraint firstAttribute="width" constant="165" id="GCd-hR-MVl"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="glennk@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bq-Mu-hNa">
-                    <rect key="frame" x="96" y="416" width="182" height="41"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="glennk@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bq-Mu-hNa">
+                    <rect key="frame" x="96.666666666666686" y="416" width="182" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="182" id="Kt1-1C-0xn"/>
+                        <constraint firstAttribute="height" constant="41" id="cKk-6R-0Mh"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Portland, Oregon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkK-uR-3GP">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portland, Oregon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkK-uR-3GP">
                     <rect key="frame" x="103" y="465" width="169" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="169" id="Dj2-xi-A1Q"/>
+                        <constraint firstAttribute="height" constant="35" id="y58-tJ-cWo"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="0.034371488829999998" green="0.73485938719999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hWb-Ot-xGB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4aw-Z4-8hy"/>
+                <constraint firstItem="hWb-Ot-xGB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Ay-8o-7Zr"/>
+                <constraint firstItem="IkK-uR-3GP" firstAttribute="top" secondItem="3bq-Mu-hNa" secondAttribute="bottom" constant="8" id="9Od-ap-kd1"/>
+                <constraint firstItem="fUR-ge-VB2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EGx-uE-zqa"/>
+                <constraint firstItem="qqz-Jg-lIG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gx6-I4-fyE"/>
+                <constraint firstItem="IkK-uR-3GP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H7p-Vo-2br"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IkK-uR-3GP" secondAttribute="bottom" constant="278" id="bpA-qm-XlJ"/>
+                <constraint firstItem="3bq-Mu-hNa" firstAttribute="top" secondItem="qqz-Jg-lIG" secondAttribute="bottom" constant="8" id="mC4-Lq-w1H"/>
+                <constraint firstItem="fUR-ge-VB2" firstAttribute="top" secondItem="hWb-Ot-xGB" secondAttribute="bottom" constant="40" id="oXj-dL-VVL"/>
+                <constraint firstItem="3bq-Mu-hNa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r2G-Rb-L5g"/>
+                <constraint firstItem="qqz-Jg-lIG" firstAttribute="top" secondItem="fUR-ge-VB2" secondAttribute="bottom" constant="28" id="xsE-im-Y3h"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="53.600000000000001" y="48.029556650246306"/>
         </view>

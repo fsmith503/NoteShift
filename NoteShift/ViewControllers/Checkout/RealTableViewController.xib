@@ -21,24 +21,36 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fti-eW-sVv">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fti-eW-sVv">
                     <rect key="frame" x="0.0" y="84" width="375" height="643"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="i5M-Pr-FkT" id="spI-9I-iUj"/>
                         <outlet property="delegate" destination="i5M-Pr-FkT" id="QWN-H9-yIR"/>
                     </connections>
                 </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Checkout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELP-sS-8uR">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELP-sS-8uR">
                     <rect key="frame" x="55" y="44" width="265" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Oxq-i4-Rs8"/>
+                        <constraint firstAttribute="width" constant="265" id="XZ6-g5-eXe"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="0.034371488829999998" green="0.73485938719999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ELP-sS-8uR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="07x-Sv-qyJ"/>
+                <constraint firstItem="ELP-sS-8uR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8j0-hp-lN4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fti-eW-sVv" secondAttribute="bottom" constant="51" id="afX-aI-N31"/>
+                <constraint firstItem="fti-eW-sVv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ej7-tM-1k7"/>
+                <constraint firstItem="ELP-sS-8uR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="55" id="fQq-4z-s4O"/>
+                <constraint firstItem="fti-eW-sVv" firstAttribute="top" secondItem="ELP-sS-8uR" secondAttribute="bottom" constant="8" id="iCa-Y6-LVV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ELP-sS-8uR" secondAttribute="trailing" constant="55" id="nrp-cO-YGA"/>
+                <constraint firstItem="fti-eW-sVv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="w4q-Sn-S9u"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.40000000000001" y="152.21674876847291"/>
         </view>

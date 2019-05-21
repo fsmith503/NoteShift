@@ -48,5 +48,9 @@ class WriteViewController: UIViewController {
         self.titleField.text = ""
         }
     }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+        // do aditional stuff
+    }
 
 }
